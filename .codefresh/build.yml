@@ -146,6 +146,8 @@ steps:
     image_name: "${{IMAGE_NAME}}"
     working_directory: "${{MAIN_REPO_PATH}}"
     disable_push: true
+    platform: 'linux/amd64,linux/arm64'
+    buildx: true
 
   openshift_build:
     title: Building OpenShift UBI Image
